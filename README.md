@@ -5,16 +5,18 @@ Regression in Machine Learning is a Supervised Learning mechanism which uses two
 Training dataset consists of input data and known response values. Using training dataset, the algorithm builds a model to predict the response values of the testing dataset. Testing dataset (previously unseen data) is used to validate the model. Often, larger training datasets yield more accurate results.
 Problem Statement
 Suppose a restaurant already has branches in different cities and it maintains data of profits and populations from all its outlets. Based on this data, it is considering various cities to open new outlets. This study aims to estimate the profits in new cities using population-profit data of outlets in existing cities. Thus, it helps the restaurant to select a city to expand its business. The relationship between population and profit is best studied through Regression. The idea here is implemented in Python language.
-Technologies used:
-Language	Python 3.5
-IDE	Anaconda
-OS	Linux
-Server	IPython Notebook Server
+Technologies used: 
+<table align="center">
+<tr><td>Language</td>	<td>Python 3.5</td></tr>
+<tr><td>IDE</td>	<td>Anaconda</td></tr>
+<tr><td>OS</td>		<td>Linux</td></tr>
+<tr><td>Server</td>	<td>IPython Notebook Server</td></tr>
+</table>
 
-What is regression analysis?
+What is regression analysis? <br />
 The term “regression” in scientific terminology refers to “prediction”. Regression Analysis in Machine Learning is a predictive modeling technique that analyses the relationship between two or more variables [1]. It is of two types.
 1) Linear Regression
-2) Non-Linear or Logistic regression
+   2) Non-Linear or Logistic regression
 Logistic regression deals with classifying data into two or more classes. The Linear Regression analyses the relationship between two (Simple Linear Regression) or more variables (Multiple Linear Regression). It uses one or more variables (“population”) and estimates the value of another variable (“profit”). A “linear” relationship is observed since the value of the dependent variable (“profit”) is directly proportional to the value of independent variable (“population”). In Regression, the dependent variable is always continuous and independent variables can be discrete or continuous. 
 Why Simple Linear Regression?
 Simple Linear Regression (SLR) is a widely used modeling technique. SLR estimates the relationship between two variables. The dataset used in this study includes two variables namely population and profit [2]. The variables share a linear relationship in the sense that as the population increases (or decreases), the sales increase (or decrease) and hence the profits increase (or decreases).
@@ -28,13 +30,20 @@ c=intercept
 Plotting the data
 The training and testing datasets used in this study are already preprocessed and hence free of duplicate or missing attribute values. The datasets consist of population attribute (continuous and measured in 10,000s of people) and a profit attribute (continuous and measured in $10,000). A few entries from the training dataset (total size = 98) are shown below. 
 
-*********************     *****************************************
+<p align="center">
+  <img src="/SampleData.png" width="150"/>
+</p>
 
  
 The Python code snippet used to implement is,
+<p align="left">
+  <img src="/Code1.png" width="250"/>
+</p>
  
 Data visualization using a Two-Dimensional Scatter Plot:
- 
+ <p align="center">
+  <img src="/PlottedGraph_Outlier.png" width="450"/>
+</p>
 The data in x-axis represents the Population of City in 10,000s and y-axis represents the Profit made by the restaurant in $10,000s. The values in y-axis are the result of mapping linear functionality of values of x-axis. Hence it can be observed that as the population raises, the profits are raising in linear fashion.
 Presence of an Outlier
 An outlier is a data point that is different than many other data points. The data point circled in red (in the above plot) is detected as an outlier. 
